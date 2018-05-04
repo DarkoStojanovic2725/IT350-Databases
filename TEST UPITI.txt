@@ -1,0 +1,127 @@
+//PRVI UPIT 
+SELECT biblioteka.NAZIVBIBLIOTEKA, opstina.NAZIVOPSTINA,
+    
+COUNT(DISTINCT radni_odnos.IDRADNOGODNOSA) AS BrojZaposlenih,
+    
+COUNT(DISTINCT primerak.IDPRIMERAK) AS BrojKnjiga
+
+FROM biblioteka,radni_odnos,primerak,opstina
+
+WHERE biblioteka.IDBIBLIOTEKA = radni_odnos.IDBIBLIOTEKA 
+AND biblioteka.IDBIBLIOTEKA = primerak.IDBIBLIOTEKA 
+AND biblioteka.IDOPSTINA = opstina.IDOPSTINA
+
+GROUP BY biblioteka.IDBIBLIOTEKA
+ 
+
+//DRUGI UPIT
+SELECT autorstvo.IDAUTOR, COUNT(*) as BrojKnjiga
+
+FROM autorstvo, knjiga
+
+WHERE autorstvo.ISBN = knjiga.ISBN 
+AND knjiga.GODINAIZDANJAKNJIGA > 2000 
+AND knjiga.GODINAIZDANJAKNJIGA <= 2017
+
+GROUP BY autorstvo.IDAUTOR
+
+HAVING BrojKnjiga > 10
+
+//TRECI UPIT
+SELECT biblioteka.IMEULICEBIBLIOTEKE, biblioteka.BROJZGRADEBIBLIOTEKA, 
+COUNT(primerak.IDAUTORSTVO) AS BrojKnjiga
+
+FROM autorstvo, primerak, biblioteka
+
+WHERE autorstvo.IDAUTOR = 1 
+AND autorstvo.IDAUTORSTVO = primerak.IDAUTORSTVO 
+AND biblioteka.IDBIBLIOTEKA = primerak.IDBIBLIOTEKA
+
+GROUP BY biblioteka.IMEULICEBIBLIOTEKE
+
+HAVING BrojKnjiga >= 5
+
+//CETVRTI UPIT
+SELECT biblioteka.IDBIBLIOTEKA,
+    
+SUM(evidencijaiznajmljivanja.IDSTANJA = 1) AS BrojIznajmljenih,
+    
+SUM(evidencijaiznajmljivanja.IDSTANJA = 2) AS BrojVracenih
+
+FROM evidencijaiznajmljivanja, biblioteka, primerak, stanjeiznajmljivanja
+
+WHERE evidencijaiznajmljivanja.IDPRIMERAK = primerak.IDPRIMERAK
+ 
+AND biblioteka.IDBIBLIOTEKA = primerak.IDBIBLIOTEKA
+ 
+AND evidencijaiznajmljivanja.IDSTANJA = stanjeiznajmljivanja.IDSTANJA
+
+GROUP BY biblioteka.IDBIBLIOTEKA
+
+//PETI UPIT
+SELECT biblioteka.IMEULICEBIBLIOTEKE, biblioteka.BROJZGRADEBIBLIOTEKA, opstina.NAZIVOPSTINA,
+
+COUNT(DISTINCT radni_odnos.IDRADNOGODNOSA) AS BrojZaposlenih,
+
+COUNT(DISTINCT primerak.IDPRIMERAK) AS BrojRazlicitihNaslova
+
+FROM biblioteka,radni_odnos,primerak, opstina, zaposleni
+
+WHERE biblioteka.IDBIBLIOTEKA = radni_odnos.IDBIBLIOTEKA 
+AND biblioteka.IDOPSTINA = opstina.IDOPSTINA 
+AND biblioteka.IDBIBLIOTEKA = primerak.IDBIBLIOTEKA 
+AND radni_odnos.IDZAPOSLENI = zaposleni.IDZAPOSLENI
+
+GROUP BY biblioteka.IMEULICEBIBLIOTEKE
+
+ORDER BY BrojRazlicitihNaslova DESC LIMIT 1
+
+//SESTI UPIT
+SELECT knjiga.IMEKNJIGA,
+
+COUNT(DISTINCT primerak.IDPRIMERAK) AS BrojPrimeraka
+
+FROM knjiga, biblioteka, autorstvo, autor, primerak, region, opstina
+
+WHERE region.IDREGION = 3
+
+AND region.IDREGION = opstina.IDREGION
+
+AND opstina.IDOPSTINA = biblioteka.IDOPSTINA
+
+AND knjiga.ISBN = autorstvo.ISBN 
+
+AND autorstvo.IDAUTORSTVO = primerak.IDAUTORSTVO
+
+AND autorstvo.IDAUTOR = autor.IDAUTOR
+
+AND biblioteka.IDBIBLIOTEKA = primerak.IDBIBLIOTEKA
+
+GROUP BY knjiga.IMEKNJIGA
+
+HAVING COUNT(autor.IDAUTOR) >= 2
+
+//SEDMI UPIT
+SELECT biblioteka.IDBIBLIOTEKA, knjiga.IMEKNJIGA, autor.IMEAUTOR,
+    
+COUNT(korisnici.IDKORISNIK)
+
+FROM biblioteka
+    
+JOIN primerak ON biblioteka.IDBIBLIOTEKA = primerak.IDBIBLIOTEKA
+    
+JOIN autorstvo ON primerak.IDAUTORSTVO = autorstvo.IDAUTORSTVO
+    
+JOIN autor ON autorstvo.IDAUTOR = autor.IDAUTOR
+    
+JOIN knjiga ON autorstvo.ISBN = knjiga.ISBN
+    
+JOIN evidencijaiznajmljivanja ON primerak.IDPRIMERAK = evidencijaiznajmljivanja.IDPRIMERAK
+    
+JOIN korisnici ON evidencijaiznajmljivanja.IDKORISNIK = korisnici.IDKORISNIK
+
+WHERE (year(primerak.datumPrimerak) = year(CURRENT_DATE()))
+
+GROUP BY biblioteka.IDBIBLIOTEKA
+
+ORDER BY knjiga.IMEKNJIGA, knjiga.GODINAIZDANJAKNJIGA

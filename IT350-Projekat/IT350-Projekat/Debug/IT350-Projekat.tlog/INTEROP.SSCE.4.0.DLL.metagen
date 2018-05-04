@@ -1,0 +1,678 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.SSCE.4.0, Version=4.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class SSCE.ReplicationClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    SSCE.ISSCEMerge
+    SSCE.Replication
+  Properties:
+    System.String Distributor 'get set' : 
+    System.String DistributorAddress 'get set' : 
+    SSCE.NETWORK_TYPE DistributorNetwork 'get set' : 
+    SSCE.SECURITY_TYPE DistributorSecurityMode 'get set' : 
+    System.String DistributorLogin 'get set' : 
+    System.String DistributorPassword 'get set' : 
+    SSCE.SSCEErrors ErrorRecords 'get ' : 
+    SSCE.REPL_EXCHANGE_TYPE ExchangeType 'get set' : 
+    System.String InternetURL 'get set' : 
+    System.String InternetLogin 'get set' : 
+    System.String InternetPassword 'get set' : 
+    Int16 LoginTimeout 'get set' : 
+    System.String ProfileName 'get set' : 
+    System.String Publisher 'get set' : 
+    System.String PublisherAddress 'get set' : 
+    SSCE.NETWORK_TYPE PublisherNetwork 'get set' : 
+    System.String PublisherDatabase 'get set' : 
+    SSCE.SECURITY_TYPE PublisherSecurityMode 'get set' : 
+    System.String PublisherLogin 'get set' : 
+    System.String PublisherPassword 'get set' : 
+    System.String Publication 'get set' : 
+    Int16 QueryTimeout 'get set' : 
+    System.String SubscriberConnectionString 'get set' : 
+    Int32 PublisherChanges 'get ' : 
+    Int32 PublisherConflicts 'get ' : 
+    Int32 SubscriberChanges 'get ' : 
+    Int32 SubscriberConflicts 'get ' : 
+    SSCE.REPL_VALIDATE_TYPE Validate 'get set' : 
+    System.String HostName 'get set' : 
+    System.String Subscriber 'get set' : 
+    System.String InternetProxyServer 'get set' : 
+    System.String InternetProxyLogin 'get set' : 
+    System.String InternetProxyPassword 'get set' : 
+    Int16 ConnectionRetryTimeout 'get set' : 
+    Int16 CompressionLevel 'get set' : 
+    Boolean ConnectionManager 'get set' : 
+    SSCE.ISSCEStatusReporting StatusReportingHandler 'get set' : 
+    SSCE.SNAPSHOT_TRANSFER_TYPE SnapshotTransferType 'get set' : 
+    Int32 ConnectTimeout 'get set' : 
+    Int32 SendTimeout 'get set' : 
+    Int32 ReceiveTimeout 'get set' : 
+    Int32 DataSendTimeout 'get set' : 
+    Int32 DataReceiveTimeout 'get set' : 
+    Int32 ControlSendTimeout 'get set' : 
+    Int32 ControlReceiveTimeout 'get set' : 
+    SSCE.INTERNET_TRANSPORT_OPTIONS InternetTransportOptions 'get set' : 
+    Int16 PostSyncCleanup 'get set' : 
+  Methods:
+    set_Validate(REPL_VALIDATE_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HostName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HostName(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Subscriber(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Subscriber(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetProxyServer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetProxyServer(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetProxyLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetProxyLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetProxyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetProxyPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ConnectionRetryTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectionRetryTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CompressionLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CompressionLevel(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ConnectionManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectionManager(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StatusReportingHandler(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StatusReportingHandler(ISSCEStatusReporting(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SnapshotTransferType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SnapshotTransferType(SNAPSHOT_TRANSFER_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Initialize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddSubscription(DBADDOPTION(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DropSubscription(DBDROPOPTION(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Run(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Terminate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReInitializeSubscription(Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ConnectTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ControlSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ControlSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ControlReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ControlReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetTransportOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetTransportOptions(INTERNET_TRANSPORT_OPTIONS&(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ApplyLocalFile(UInt16&(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PostSyncCleanup(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PostSyncCleanup(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Distributor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Distributor(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DistributorAddress(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DistributorAddress(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DistributorNetwork(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DistributorNetwork(NETWORK_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DistributorSecurityMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DistributorSecurityMode(SECURITY_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DistributorLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DistributorLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DistributorPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DistributorPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ErrorRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ExchangeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ExchangeType(REPL_EXCHANGE_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetURL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetURL(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LoginTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LoginTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ProfileName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ProfileName(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Publisher(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Publisher(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherAddress(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PublisherAddress(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherNetwork(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PublisherNetwork(NETWORK_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherDatabase(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PublisherDatabase(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherSecurityMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PublisherSecurityMode(SECURITY_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PublisherLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PublisherPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Publication(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Publication(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_QueryTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_QueryTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SubscriberConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SubscriberConnectionString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PublisherConflicts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SubscriberChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SubscriberConflicts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Validate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface SSCE.Replication: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    SSCE.ISSCEMerge
+Interface SSCE.ISSCEMerge: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Distributor 'get set' : 
+    System.String DistributorAddress 'get set' : 
+    SSCE.NETWORK_TYPE DistributorNetwork 'get set' : 
+    SSCE.SECURITY_TYPE DistributorSecurityMode 'get set' : 
+    System.String DistributorLogin 'get set' : 
+    System.String DistributorPassword 'get set' : 
+    SSCE.SSCEErrors ErrorRecords 'get ' : 
+    SSCE.REPL_EXCHANGE_TYPE ExchangeType 'get set' : 
+    System.String InternetURL 'get set' : 
+    System.String InternetLogin 'get set' : 
+    System.String InternetPassword 'get set' : 
+    Int16 LoginTimeout 'get set' : 
+    System.String ProfileName 'get set' : 
+    System.String Publisher 'get set' : 
+    System.String PublisherAddress 'get set' : 
+    SSCE.NETWORK_TYPE PublisherNetwork 'get set' : 
+    System.String PublisherDatabase 'get set' : 
+    SSCE.SECURITY_TYPE PublisherSecurityMode 'get set' : 
+    System.String PublisherLogin 'get set' : 
+    System.String PublisherPassword 'get set' : 
+    System.String Publication 'get set' : 
+    Int16 QueryTimeout 'get set' : 
+    System.String SubscriberConnectionString 'get set' : 
+    Int32 PublisherChanges 'get ' : 
+    Int32 PublisherConflicts 'get ' : 
+    Int32 SubscriberChanges 'get ' : 
+    Int32 SubscriberConflicts 'get ' : 
+    SSCE.REPL_VALIDATE_TYPE Validate 'get set' : 
+    System.String HostName 'get set' : 
+    System.String Subscriber 'get set' : 
+    System.String InternetProxyServer 'get set' : 
+    System.String InternetProxyLogin 'get set' : 
+    System.String InternetProxyPassword 'get set' : 
+    Int16 ConnectionRetryTimeout 'get set' : 
+    Int16 CompressionLevel 'get set' : 
+    Boolean ConnectionManager 'get set' : 
+    SSCE.ISSCEStatusReporting StatusReportingHandler 'get set' : 
+    SSCE.SNAPSHOT_TRANSFER_TYPE SnapshotTransferType 'get set' : 
+    Int32 ConnectTimeout 'get set' : 
+    Int32 SendTimeout 'get set' : 
+    Int32 ReceiveTimeout 'get set' : 
+    Int32 DataSendTimeout 'get set' : 
+    Int32 DataReceiveTimeout 'get set' : 
+    Int32 ControlSendTimeout 'get set' : 
+    Int32 ControlReceiveTimeout 'get set' : 
+    SSCE.INTERNET_TRANSPORT_OPTIONS InternetTransportOptions 'get set' : 
+    Int16 PostSyncCleanup 'get set' : 
+  Methods:
+    set_DataSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ControlSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ControlSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ControlReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ControlReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetTransportOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetTransportOptions(INTERNET_TRANSPORT_OPTIONS&(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ApplyLocalFile(UInt16&(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PostSyncCleanup(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PostSyncCleanup(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Distributor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Distributor(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DistributorAddress(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DistributorAddress(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DistributorNetwork(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DistributorNetwork(NETWORK_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DistributorSecurityMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DistributorSecurityMode(SECURITY_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DistributorLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DistributorLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DistributorPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DistributorPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ErrorRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ExchangeType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ExchangeType(REPL_EXCHANGE_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetURL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetURL(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LoginTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LoginTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ProfileName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ProfileName(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Publisher(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Publisher(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherAddress(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PublisherAddress(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherNetwork(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PublisherNetwork(NETWORK_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherDatabase(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PublisherDatabase(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherSecurityMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PublisherSecurityMode(SECURITY_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PublisherLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PublisherPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Publication(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Publication(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_QueryTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_QueryTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SubscriberConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SubscriberConnectionString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PublisherConflicts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SubscriberChanges(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SubscriberConflicts(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Validate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Validate(REPL_VALIDATE_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HostName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HostName(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Subscriber(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Subscriber(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetProxyServer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetProxyServer(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetProxyLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetProxyLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetProxyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetProxyPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionRetryTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionRetryTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CompressionLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CompressionLevel(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionManager(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StatusReportingHandler(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StatusReportingHandler(ISSCEStatusReporting(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SnapshotTransferType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SnapshotTransferType(SNAPSHOT_TRANSFER_TYPE(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Initialize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddSubscription(DBADDOPTION(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DropSubscription(DBDROPOPTION(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Run(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Terminate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ReInitializeSubscription(Boolean(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ConnectTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Struct SSCE.NETWORK_TYPE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.NETWORK_TYPE DEFAULT_NETWORK = 0 : Public, Static, Literal, HasDefault
+    SSCE.NETWORK_TYPE TCPIP_SOCKETS = 1 : Public, Static, Literal, HasDefault
+    SSCE.NETWORK_TYPE MULTI_PROTOCOL = 2 : Public, Static, Literal, HasDefault
+Struct SSCE.SECURITY_TYPE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.SECURITY_TYPE DB_AUTHENTICATION = 0 : Public, Static, Literal, HasDefault
+    SSCE.SECURITY_TYPE NT_AUTHENTICATION = 1 : Public, Static, Literal, HasDefault
+    SSCE.SECURITY_TYPE BASIC_AUTHENTICATION = 0 : Public, Static, Literal, HasDefault
+Interface SSCE.ISSCEErrors: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Count 'get ' : 
+    SSCE.SSCEError Item [System.Object] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ClearErrors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddError(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Int32(In), Object&(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(SSCEError(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface SSCE.ISSCEError: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Description 'get ' : 
+    System.String Source 'get ' : 
+    Int32 Number 'get ' : 
+    Int32 NativeError 'get ' : 
+    SSCE.SSCEParams Params 'get ' : 
+  Methods:
+    get_Description(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Number(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NativeError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Params(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetDescription(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetSource(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetNumber(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetNativeError(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface SSCE.ISSCEParams: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Count 'get ' : 
+    SSCE.SSCEParam Item [System.Object] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ClearParams(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddParam(Object&(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Add(SSCEParam(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface SSCE.ISSCEParam: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object Param 'get set' : 
+  Methods:
+    get_Param(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Param(Object&(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Struct SSCE.REPL_EXCHANGE_TYPE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.REPL_EXCHANGE_TYPE UPLOAD = 1 : Public, Static, Literal, HasDefault
+    SSCE.REPL_EXCHANGE_TYPE BIDIRECTIONAL = 3 : Public, Static, Literal, HasDefault
+Struct SSCE.REPL_VALIDATE_TYPE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.REPL_VALIDATE_TYPE NO_VALIDATION = 0 : Public, Static, Literal, HasDefault
+    SSCE.REPL_VALIDATE_TYPE ROWCOUNT_ONLY = 1 : Public, Static, Literal, HasDefault
+Interface SSCE.ISSCEStatusReporting: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    OnStartTableUpload(UInt16&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnStartTableDownload(UInt16&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnSynchronization(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct SSCE.SNAPSHOT_TRANSFER_TYPE: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.SNAPSHOT_TRANSFER_TYPE SNAPSHOT_TRANSFER_UNC = 0 : Public, Static, Literal, HasDefault
+    SSCE.SNAPSHOT_TRANSFER_TYPE SNAPSHOT_TRANSFER_FTP = 1 : Public, Static, Literal, HasDefault
+Struct SSCE.DBADDOPTION: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.DBADDOPTION EXISTING_DATABASE = 0 : Public, Static, Literal, HasDefault
+    SSCE.DBADDOPTION CREATE_DATABASE = 1 : Public, Static, Literal, HasDefault
+    SSCE.DBADDOPTION ATTACH_DATABASE = 2 : Public, Static, Literal, HasDefault
+    SSCE.DBADDOPTION ATTACH_SUBSCRIPTION = 3 : Public, Static, Literal, HasDefault
+    SSCE.DBADDOPTION REGISTER_SUBSCRIPTION = 4 : Public, Static, Literal, HasDefault
+Struct SSCE.DBDROPOPTION: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.DBDROPOPTION LEAVE_DATABASE = 0 : Public, Static, Literal, HasDefault
+    SSCE.DBDROPOPTION DROP_DATABASE = 1 : Public, Static, Literal, HasDefault
+    SSCE.DBDROPOPTION UNREGISTER_SUBSCRIPTION = 2 : Public, Static, Literal, HasDefault
+Struct SSCE.INTERNET_TRANSPORT_OPTIONS: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int16 CompressionLevel : Public
+    Int16 ConnectionRetryTimeout : Public
+    Int32 ConnectTimeout : Public
+    Int32 SendTimeout : Public
+    Int32 ReceiveTimeout : Public
+    Int32 DataSendTimeout : Public
+    Int32 DataReceiveTimeout : Public
+    Int32 ControlSendTimeout : Public
+    Int32 ControlReceiveTimeout : Public
+Class SSCE.RemoteDataAccessClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    SSCE.ISSCERDA
+    SSCE.RemoteDataAccess
+  Properties:
+    System.String LocalConnectionString 'get set' : 
+    System.String InternetURL 'get set' : 
+    System.String InternetLogin 'get set' : 
+    System.String InternetPassword 'get set' : 
+    SSCE.SSCEErrors ErrorRecords 'get ' : 
+    System.String InternetProxyServer 'get set' : 
+    System.String InternetProxyLogin 'get set' : 
+    System.String InternetProxyPassword 'get set' : 
+    Int16 ConnectionRetryTimeout 'get set' : 
+    Int16 CompressionLevel 'get set' : 
+    Boolean ConnectionManager 'get set' : 
+    Int32 ConnectTimeout 'get set' : 
+    Int32 SendTimeout 'get set' : 
+    Int32 ReceiveTimeout 'get set' : 
+    Int32 DataSendTimeout 'get set' : 
+    Int32 DataReceiveTimeout 'get set' : 
+    Int32 ControlSendTimeout 'get set' : 
+    Int32 ControlReceiveTimeout 'get set' : 
+    SSCE.INTERNET_TRANSPORT_OPTIONS InternetTransportOptions 'get set' : 
+  Methods:
+    get_LocalConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LocalConnectionString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetURL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetURL(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ErrorRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetProxyServer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetProxyServer(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetProxyLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetProxyLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetProxyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetProxyPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ConnectionRetryTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectionRetryTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CompressionLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CompressionLevel(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ConnectionManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectionManager(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Pull(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), RDA_TRACKOPTION(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Push(String(In, HasFieldMarshal), String(In, HasFieldMarshal), RDA_BATCHOPTION(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SubmitSQL(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ConnectTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConnectTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DataReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ControlSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ControlSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ControlReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ControlReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InternetTransportOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InternetTransportOptions(INTERNET_TRANSPORT_OPTIONS&(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface SSCE.RemoteDataAccess: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    SSCE.ISSCERDA
+Interface SSCE.ISSCERDA: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String LocalConnectionString 'get set' : 
+    System.String InternetURL 'get set' : 
+    System.String InternetLogin 'get set' : 
+    System.String InternetPassword 'get set' : 
+    SSCE.SSCEErrors ErrorRecords 'get ' : 
+    System.String InternetProxyServer 'get set' : 
+    System.String InternetProxyLogin 'get set' : 
+    System.String InternetProxyPassword 'get set' : 
+    Int16 ConnectionRetryTimeout 'get set' : 
+    Int16 CompressionLevel 'get set' : 
+    Boolean ConnectionManager 'get set' : 
+    Int32 ConnectTimeout 'get set' : 
+    Int32 SendTimeout 'get set' : 
+    Int32 ReceiveTimeout 'get set' : 
+    Int32 DataSendTimeout 'get set' : 
+    Int32 DataReceiveTimeout 'get set' : 
+    Int32 ControlSendTimeout 'get set' : 
+    Int32 ControlReceiveTimeout 'get set' : 
+    SSCE.INTERNET_TRANSPORT_OPTIONS InternetTransportOptions 'get set' : 
+  Methods:
+    get_LocalConnectionString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LocalConnectionString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetURL(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetURL(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ErrorRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetProxyServer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetProxyServer(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetProxyLogin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetProxyLogin(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetProxyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetProxyPassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionRetryTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionRetryTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CompressionLevel(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CompressionLevel(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConnectionManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectionManager(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Pull(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal), RDA_TRACKOPTION(In, Optional, HasDefault), String(In, Optional, HasDefault, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Push(String(In, HasFieldMarshal), String(In, HasFieldMarshal), RDA_BATCHOPTION(In, Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SubmitSQL(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ConnectTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConnectTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DataReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ControlSendTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ControlSendTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ControlReceiveTimeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ControlReceiveTimeout(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InternetTransportOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InternetTransportOptions(INTERNET_TRANSPORT_OPTIONS&(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Struct SSCE.RDA_TRACKOPTION: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.RDA_TRACKOPTION TRACKINGOFF = 0 : Public, Static, Literal, HasDefault
+    SSCE.RDA_TRACKOPTION TRACKINGON = 1 : Public, Static, Literal, HasDefault
+    SSCE.RDA_TRACKOPTION TRACKINGON_INDEXES = 2 : Public, Static, Literal, HasDefault
+    SSCE.RDA_TRACKOPTION TRACKINGOFF_INDEXES = 3 : Public, Static, Literal, HasDefault
+Struct SSCE.RDA_BATCHOPTION: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.RDA_BATCHOPTION BATCHINGOFF = 0 : Public, Static, Literal, HasDefault
+    SSCE.RDA_BATCHOPTION BATCHINGON = 1 : Public, Static, Literal, HasDefault
+Class SSCE.EngineClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    SSCE.ISSCEEngine
+    SSCE.Engine
+  Properties:
+    SSCE.SSCEErrors ErrorRecords 'get ' : 
+  Methods:
+    CompactDatabase(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ErrorRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreateDatabase(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Repair(String(In, HasFieldMarshal), String(In, HasFieldMarshal), REPAIROPTION(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UpgradeDatabase(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Verify(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    VerifyEx(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface SSCE.Engine: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    SSCE.ISSCEEngine
+Interface SSCE.ISSCEEngine: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    SSCE.SSCEErrors ErrorRecords 'get ' : 
+  Methods:
+    CompactDatabase(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ErrorRecords(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreateDatabase(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Repair(String(In, HasFieldMarshal), String(In, HasFieldMarshal), REPAIROPTION(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UpgradeDatabase(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Verify(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    VerifyEx(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct SSCE.REPAIROPTION: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SSCE.REPAIROPTION DELETECORRUPTED = 0 : Public, Static, Literal, HasDefault
+    SSCE.REPAIROPTION RECOVERCORRUPTED = 1 : Public, Static, Literal, HasDefault
+    SSCE.REPAIROPTION RECOVERALLPOSSIBLEROWS = 1 : Public, Static, Literal, HasDefault
+    SSCE.REPAIROPTION RECOVERALLORFAIL = 2 : Public, Static, Literal, HasDefault
+Class SSCE.SSCEErrorsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    SSCE.ISSCEErrors
+    SSCE.SSCEErrors
+  Properties:
+    Int32 Count 'get ' : 
+    SSCE.SSCEError Item [System.Object] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ClearErrors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AddError(String(In, HasFieldMarshal), String(In, HasFieldMarshal), Int32(In), Int32(In), Int32(In), Object&(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Add(SSCEError(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface SSCE.SSCEErrors: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    SSCE.ISSCEErrors
+Class SSCE.SSCEErrorClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    SSCE.ISSCEError
+    SSCE.SSCEError
+  Properties:
+    System.String Description 'get ' : 
+    System.String Source 'get ' : 
+    Int32 Number 'get ' : 
+    Int32 NativeError 'get ' : 
+    SSCE.SSCEParams Params 'get ' : 
+  Methods:
+    get_Description(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Source(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Number(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NativeError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Params(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetDescription(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetSource(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetNumber(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetNativeError(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface SSCE.SSCEError: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    SSCE.ISSCEError
+Class SSCE.SSCEParamsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    SSCE.ISSCEParams
+    SSCE.SSCEParams
+  Properties:
+    Int32 Count 'get ' : 
+    SSCE.SSCEParam Item [System.Object] 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ClearParams(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Item(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AddParam(Object&(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Add(SSCEParam(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface SSCE.SSCEParams: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    SSCE.ISSCEParams
+Class SSCE.SSCEParamClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    SSCE.ISSCEParam
+    SSCE.SSCEParam
+  Properties:
+    System.Object Param 'get set' : 
+  Methods:
+    get_Param(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Param(Object&(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface SSCE.SSCEParam: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    SSCE.ISSCEParam
